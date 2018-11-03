@@ -1,14 +1,16 @@
 import React from "react";
 import { render } from "react-dom";
+import { withRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 
 import configureStore from "./store";
-import Page from "./Page";
+import App from "./App";
 
-const App = () => (
+const BrowserRouterApp = () => (
   <Provider store={configureStore()}>
-    <Page />
+    <App />
   </Provider>
 );
+export default withRouter(BrowserRouterApp);
 
-render(<App />, document.getElementById("root"));
+render(<BrowserRouterApp />, document.getElementById("root"));

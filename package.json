@@ -28,7 +28,7 @@
   "scripts": {
     "start": "npm-run-all -p build-css api-server start-js",
     "start-production": "npm-run-all -p build serve-build api-server",
-    "api-server": "node server.js",
+    "api-server": "IP=0.0.0.0 PORT=8080 node server.js",
     "build-css": "node-sass src/ -o src/",
     "serve": "serve ./public",
     "serve-build": "serve ./build",
