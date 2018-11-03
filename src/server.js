@@ -37,7 +37,7 @@ const database = [
   { name: "Riddle" }
 ];
 
-router.get("/", function(req, res) {
+router.get("/resource", function(req, res) {
   // TODO: modify data here?
   const data = database.map((data, index) => ({ id: index, ...data }));
   console.log("Response:", data);
