@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 import { incrementAction, decreaseAction } from "./actions";
 import PageView from "./PageView";
 const mapStateToProps = state => ({
-  value: state.value
+  value: state.page.value
 });
 
 class Page extends PureComponent {

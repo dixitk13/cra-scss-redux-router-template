@@ -3,7 +3,7 @@ const initialState = {
   value: 0
 };
 
-function addReducer(state = initialState, action) {
+function page(state = initialState, action) {
   switch (action.type) {
     case INCREMENT:
       return { ...state, value: state.value + 1 };
@@ -14,4 +14,4 @@ function addReducer(state = initialState, action) {
   }
 }
 
-export default addReducer;
+export default page;
