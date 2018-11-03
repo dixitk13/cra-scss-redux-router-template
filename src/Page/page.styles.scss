@@ -1,0 +1,13 @@
+@import "../common/constant.scss";
+.page-view-container {
+  display: flex;
+  flex-direction: column;
+  .value {
+    color: $black-color;
+    font-weight: 500;
+    font-size: 21px;
+  }
+  .action-holder {
+    font-size: 15px;
+  }
+}

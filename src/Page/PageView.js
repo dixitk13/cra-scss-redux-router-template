@@ -1,11 +1,14 @@
 import React from "react";
+import "./page.styles.scss";
 
 export const PageView = ({ value, incrementAction, decreaseAction }) => {
   return (
-    <div>
-      <h1>{value}</h1>
-      <button onClick={incrementAction}>increment</button>
-      <button onClick={decreaseAction}>decrease</button>
+    <div className="page-view-container">
+      <div className="value">{value}</div>
+      <div className="action-holder">
+        <button onClick={incrementAction}>increment</button>
+        <button onClick={decreaseAction}>decrease</button>
+      </div>
     </div>
   );
 };
