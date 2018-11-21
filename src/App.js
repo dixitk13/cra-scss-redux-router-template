@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { connect } from "react-redux";
 
 import Page from "./Page";
-import ProctectRoute from "./protectRoute";
+import ProtectRoute from "./protectRoute";
 
 const mapStateToProps = state => {
   // template: not using as of now
@@ -17,7 +17,7 @@ class App extends Component {
     return (
       <BrowserRouter>
         <Switch>
-          <ProctectRoute
+          <ProtectRoute
             flag={this.props.flag}
             exact
             path="/test"

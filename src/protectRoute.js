@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Redirect } from "react-router-dom";
 // simple HOC for protecting route
-const ProctectRoute = ({ flag, component: Component, ...rest }) => (
+const ProtectRoute = ({ flag, component: Component, ...rest }) => (
   <Route
     {...rest}
     render={props =>
@@ -19,4 +19,4 @@ const ProctectRoute = ({ flag, component: Component, ...rest }) => (
   />
 );
 
-export default ProctectRoute;
+export default ProtectRoute;
